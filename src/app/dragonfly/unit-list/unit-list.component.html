@@ -1,0 +1,40 @@
+
+<custom-unite-list
+            #locVar="uniteList"
+            [apiUrl]   = "apiUrl"
+            [dataNode] = "dataNode"
+            [methodCall] = "methodCall"
+            [dataTotalNode] = "dataTotalNode"
+            [postBodyStr] = "postBodyStr"
+            [postBodyNodeDetails] = "postBodyNodeDetails"
+            [dynamicOffset] = "dynamicOffset"
+      >
+
+      <div class="pagination-div" *ngIf="showPagination">
+        <app-paginate-list
+              [postBodyStr] = "postBodyStr"
+              [postBodyNodeDetails] = "postBodyNodeDetails"
+              [totalRecords] = "locVar.directiveTotalData | async"
+              (change)="paginateChange($event)"
+        >
+        </app-paginate-list>
+      </div>
+
+      <table [class]="tableClass">
+          <thead>
+            <tr>
+                <th *ngFor="let headerName of tableHeader">{{ headerName.label }}</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let rowData of locVar.directiveData | async">
+              <td *ngFor="let headerName of tableHeader;" [innerHTML]= "rowData | displayRow : headerName"></td>
+            </tr>
+          </tbody>
+      </table>
+
+</custom-unite-list>
+
+
+

@@ -1,0 +1,9 @@
+<div class="pagination">
+  <span class="pageButton" (click)="loadPrevPage()">&laquo;</span>
+  <span 
+      *ngFor="let pageNo of pageNumbers"
+      (click)="loadThisPage(pageNo)"
+      class="pageButton {{ (initialOffset / recordsPerPage) == (pageNo - 1) ? 'active' : '' }}"
+      >{{ pageNo }}</span>
+  <span class="pageButton" (click)="loadNextPage()">&raquo;</span>
+</div>

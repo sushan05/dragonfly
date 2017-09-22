@@ -1,0 +1,11 @@
+{
+  "name": "dragonfly",
+  "version": "1.0.0",
+  "description": "Angular module to build list view from the provided api data",
+  "main": "dragonfly.module.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

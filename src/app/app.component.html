@@ -1,0 +1,30 @@
+<div class="container"> 
+      <!--<app-article-list baseUrlString="http://demo.appcarvers.com/junite/index.php?option=com_api&app=content&resource=articles&format=raw&lang=en"></app-article-list>-->
+
+      <!--<app-unite-list
+            [apiUrl]   = "myApiUrl"
+            [dataNode] = "myDataNode"
+            [tableHeader] = "myTableHeaders"
+            tableClass = "table-hover table"
+            methodCall = "post"
+            [dataTotalNode] = "myDataTotalNode"
+            [postBodyStr] = "myPostBodyStr"
+            [postBodyNodeDetails] = "myPostBodyNodeDetails"
+            [showPagination] = true
+      >
+      </app-unite-list>-->
+
+      <!--<custom-unite-list
+            #locVar="uniteList"
+            [apiUrl]   = "myApiUrl"
+            [dataNode] = "myDataNode"
+            methodCall = "post"
+      >
+            <div *ngFor="let ch of locVar.directiveData | async">
+                  {{ ch.job_id }}
+            </div>
+            <button (click)="chekcing(locVar)">askdf</button>
+      </custom-unite-list>-->
+
+      <app-country></app-country>
+</div>
