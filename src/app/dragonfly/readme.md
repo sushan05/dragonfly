@@ -5,7 +5,7 @@ This librabry is for Angular (2+) projects to build a tabular list from the data
 ## Installing
 
 ```
-npm install ngx-dragonfly
+npm install ngx-dragonfly --save
 ```
 
 ## Implementation
@@ -25,18 +25,18 @@ Once importing is done, you can either print the list view of data fetched from 
 
 app.component.html
 ```
-    <app-unit-list
-                [apiUrl]        = "myApiUrl"
-                [dataNode]      = "myDataNode"
-                [tableHeader]   = "myTableHeaders"
-                tableClass      = "table-hover table"
-                methodCall      = "post"
-                [dataTotalNode] = "myDataTotalNode"
-                [postBodyStr]   = "myPostBodyStr"
-                [showPagination] = true
-                [postBodyNodeDetails] = "myPostBodyNodeDetails"
+    <app-unite-list
+            [apiUrl]        = "myApiUrl"
+            [dataNode]      = "myDataNode"
+            [tableHeader]   = "myTableHeaders"
+            tableClass      = "table-hover table"
+            methodCall      = "post"
+            [dataTotalNode] = "myDataTotalNode"
+            [postBodyStr]   = "myPostBodyStr"
+            [showPagination] = true
+            [postBodyNodeDetails] = "myPostBodyNodeDetails"
         >
-    </app-unit-list>
+    </app-unite-list>
 ```
 
 app.component.ts
